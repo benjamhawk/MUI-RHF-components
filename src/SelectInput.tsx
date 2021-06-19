@@ -5,19 +5,20 @@ import {
   useFormContext
 } from 'react-hook-form'
 
-import { TextField, TextFieldProps } from '@material-ui/core'
+import { MenuItem, TextField, TextFieldProps } from '@material-ui/core'
 
 type Props = {
+  options: { value: any; label: string }[]
   name: string
   label?: string
   defaultValue?: string | number
   required?: boolean
   useControllerProps?: UseControllerProps
 }
-
-const TextInput = ({
+const SelectInput = ({
   name,
   label,
+  options,
   defaultValue = '',
   required = false,
   useControllerProps,
@@ -26,7 +27,7 @@ const TextInput = ({
   const { control, formState } = useFormContext()
 
   const {
-    field: { ...inputProps }
+    field: { ref, ...inputProps }
   } = useController({
     name: name as any,
     control,
@@ -40,15 +41,20 @@ const TextInput = ({
 
   return (
     <TextField
+      select
       label={label}
-      defaultValue={defaultValue}
       error={formState.errors[name] ? true : false}
       helperText={formState.errors[name]?.message}
       required={required}
       {...inputProps}
-      {...rest}
-    />
+      {...rest}>
+      {options.map((option) => (
+        <MenuItem key={option.value} value={option.value}>
+          {option.label}
+        </MenuItem>
+      ))}
+    </TextField>
   )
 }
 
-export default TextInput
+export default SelectInput

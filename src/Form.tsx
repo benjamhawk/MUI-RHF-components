@@ -4,18 +4,18 @@ import { FormProvider, SubmitHandler } from 'react-hook-form'
 type HookFormProps = {
   onSubmit: SubmitHandler<any>
   formMethods: any
-  formProps?: Object
 }
 
-const Form: FC<HookFormProps> = ({
-  children,
-  formMethods,
-  onSubmit,
-  formProps = {}
-}) => {
+const Form: FC<
+  HookFormProps &
+    React.DetailedHTMLProps<
+      React.FormHTMLAttributes<HTMLFormElement>,
+      HTMLFormElement
+    >
+> = ({ children, formMethods, onSubmit, ...rest }) => {
   return (
     <FormProvider {...formMethods}>
-      <form onSubmit={formMethods.handleSubmit(onSubmit)} {...formProps}>
+      <form onSubmit={formMethods.handleSubmit(onSubmit)} {...rest}>
         {children}
       </form>
     </FormProvider>
