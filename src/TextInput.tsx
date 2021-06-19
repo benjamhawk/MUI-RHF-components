@@ -1,19 +1,8 @@
 import React from 'react'
 
-type Props = {
-  name: string
-  label?: string
-  defaultValue?: string | number
-  required?: boolean
-}
-
-const TextInput = ({
-  name,
-  label,
-  defaultValue = '',
-  required = false,
-  ...rest
-}: Props) => {
+const TextField = (
+ 
+) => {
 
   return (
     <div>Test
@@ -21,4 +10,4 @@ const TextInput = ({
   )
 }
 
-export default TextInput
+export default TextField
