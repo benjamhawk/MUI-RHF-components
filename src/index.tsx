@@ -1,2 +1,2 @@
 export { default as TextField } from './TextInput'
-export { default as Form } from './RHForm'
+export { default as Form } from './Form'
