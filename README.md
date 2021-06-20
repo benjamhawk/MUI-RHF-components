@@ -2,6 +2,14 @@
 
 MUI-RHF-components is a library that extracts common Material UI and React-Hook-Form integrations. This library provides building blocks to quickly start building forms without limiting any of the customizability that MUI offers. All of the props exposed by MUI are still accessible.
 
+## Prerequisites
+
+Install react-hook-form and material-ui
+
+```bash
+npm install react-hook-form @material-ui/core
+```
+
 ## Installation
 
 ```bash
@@ -71,6 +79,8 @@ export default App
 [Validation Example](https://codesandbox.io/s/mui-rhf-components-validation-example-pzdx2)
 
 [InitializedData Example](https://codesandbox.io/s/mui-rhf-components-initialize-data-vc6b7?file=/src/App.tsx)
+
+[Custom Styles Example](https://codesandbox.io/s/mui-rhf-components-custom-styles-example-7w2tj?file=/src/App.tsx)
 
 ## API
 
