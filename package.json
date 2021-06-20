@@ -1,6 +1,6 @@
 {
   "name": "mui-rhf-components",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MUI-RHF-components is a library that extracts common Material UI and React-Hook-Form integrations. This library provides building blocks to quickly start building forms without limiting any of the customizability that MUI offers. All of the props exposed by MUI are still accessible.",
   "homepage": "https://github.com/benjamhawk/MUI-RHF-components",
   "main": "./lib/cjs/index.js",
@@ -12,7 +12,14 @@
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonjs --outDir lib/cjs"
   },
-  "keywords": [],
+  "keywords": [
+    "react",
+    "material-ui",
+    "mui",
+    "rhf",
+    "react-hook-form",
+    "form"
+  ],
   "author": "",
   "license": "ISC",
   "files": [
