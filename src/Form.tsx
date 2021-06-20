@@ -1,8 +1,8 @@
 import React, { FC } from 'react'
-import { FormProvider, SubmitHandler } from 'react-hook-form'
+import { FormProvider } from 'react-hook-form'
 
 type HookFormProps = {
-  onSubmit: SubmitHandler<any>
+  onSubmit: Function
   formMethods: any
 }
 
