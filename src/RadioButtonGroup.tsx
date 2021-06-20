@@ -1,9 +1,5 @@
 import React from 'react'
-import {
-  UseControllerProps,
-  useController,
-  useFormContext
-} from 'react-hook-form'
+import { useController, useFormContext } from 'react-hook-form'
 
 import {
   FormControl,
@@ -28,7 +24,7 @@ type Props = {
   formControlProps?: FormControlProps
   formControlLabelProps?: FormControlLabelProps
   radioProps?: RadioProps
-  useControllerProps?: UseControllerProps
+  useControllerProps?: { [key: string]: any }
 }
 
 const RadioButtonGroup = ({

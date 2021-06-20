@@ -1,9 +1,5 @@
 import React from 'react'
-import {
-  UseControllerProps,
-  useController,
-  useFormContext
-} from 'react-hook-form'
+import { useController, useFormContext } from 'react-hook-form'
 
 import { TextField, TextFieldProps } from '@material-ui/core'
 
@@ -12,7 +8,7 @@ type Props = {
   label?: string
   defaultValue?: string | number
   required?: boolean
-  useControllerProps?: UseControllerProps
+  useControllerProps?: { [key: string]: any }
 }
 
 const TextInput = ({

@@ -1,5 +1,4 @@
 /// <reference types="react" />
-import { UseControllerProps } from 'react-hook-form';
 import { FormControlLabelProps, FormControlProps, FormLabelProps, RadioGroupProps, RadioProps } from '@material-ui/core';
 declare type Props = {
     name: string;
@@ -14,7 +13,9 @@ declare type Props = {
     formControlProps?: FormControlProps;
     formControlLabelProps?: FormControlLabelProps;
     radioProps?: RadioProps;
-    useControllerProps?: UseControllerProps;
+    useControllerProps?: {
+        [key: string]: any;
+    };
 };
 declare const RadioButtonGroup: ({ name, label, options, defaultValue, formControlProps, formLabelProps, radioGroupProps, radioProps, formControlLabelProps, useControllerProps }: Props) => JSX.Element;
 export default RadioButtonGroup;

@@ -1,5 +1,4 @@
 /// <reference types="react" />
-import { ControllerProps } from 'react-hook-form';
 import { CheckboxProps, FormControlLabelProps, FormControlProps, FormGroupProps, FormLabelProps } from '@material-ui/core';
 declare type Props = {
     options: {
@@ -13,7 +12,9 @@ declare type Props = {
     formControlProps?: FormControlProps;
     formControlLabelProps?: FormControlLabelProps;
     checkboxProps?: CheckboxProps;
-    controllerProps?: ControllerProps;
+    controllerProps?: {
+        [key: string]: any;
+    };
 };
 declare const CheckboxGroup: ({ options, name, label, formControlProps, formLabelProps, formGroupProps, checkboxProps, formControlLabelProps, controllerProps }: Props) => JSX.Element;
 export default CheckboxGroup;

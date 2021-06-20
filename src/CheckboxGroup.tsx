@@ -1,5 +1,5 @@
 import React from 'react'
-import { Controller, ControllerProps, useFormContext } from 'react-hook-form'
+import { Controller, useFormContext } from 'react-hook-form'
 
 import {
   Checkbox,
@@ -23,7 +23,7 @@ type Props = {
   formControlProps?: FormControlProps
   formControlLabelProps?: FormControlLabelProps
   checkboxProps?: CheckboxProps
-  controllerProps?: ControllerProps
+  controllerProps?: { [key: string]: any }
 }
 
 const CheckboxGroup = ({
