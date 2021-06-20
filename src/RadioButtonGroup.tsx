@@ -4,7 +4,6 @@ import { useController, useFormContext } from 'react-hook-form'
 import {
   FormControl,
   FormControlLabel,
-  FormControlLabelProps,
   FormControlProps,
   FormLabel,
   FormLabelProps,
@@ -22,7 +21,7 @@ type Props = {
   formLabelProps?: FormLabelProps
   radioGroupProps?: RadioGroupProps
   formControlProps?: FormControlProps
-  formControlLabelProps?: FormControlLabelProps
+  formControlLabelProps?: { [key: string]: any }
   radioProps?: RadioProps
   useControllerProps?: { [key: string]: any }
 }

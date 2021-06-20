@@ -1,5 +1,5 @@
 /// <reference types="react" />
-import { CheckboxProps, FormControlLabelProps, FormControlProps, FormGroupProps, FormLabelProps } from '@material-ui/core';
+import { CheckboxProps, FormControlProps, FormGroupProps, FormLabelProps } from '@material-ui/core';
 declare type Props = {
     options: {
         value: string | number;
@@ -10,7 +10,9 @@ declare type Props = {
     formLabelProps?: FormLabelProps;
     formGroupProps?: FormGroupProps;
     formControlProps?: FormControlProps;
-    formControlLabelProps?: FormControlLabelProps;
+    formControlLabelProps?: {
+        [key: string]: any;
+    };
     checkboxProps?: CheckboxProps;
     controllerProps?: {
         [key: string]: any;

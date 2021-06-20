@@ -1,5 +1,5 @@
 /// <reference types="react" />
-import { FormControlLabelProps, FormControlProps, FormLabelProps, RadioGroupProps, RadioProps } from '@material-ui/core';
+import { FormControlProps, FormLabelProps, RadioGroupProps, RadioProps } from '@material-ui/core';
 declare type Props = {
     name: string;
     options: {
@@ -11,7 +11,9 @@ declare type Props = {
     formLabelProps?: FormLabelProps;
     radioGroupProps?: RadioGroupProps;
     formControlProps?: FormControlProps;
-    formControlLabelProps?: FormControlLabelProps;
+    formControlLabelProps?: {
+        [key: string]: any;
+    };
     radioProps?: RadioProps;
     useControllerProps?: {
         [key: string]: any;

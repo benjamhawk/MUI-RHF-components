@@ -6,7 +6,6 @@ import {
   CheckboxProps,
   FormControl,
   FormControlLabel,
-  FormControlLabelProps,
   FormControlProps,
   FormGroup,
   FormGroupProps,
@@ -21,7 +20,7 @@ type Props = {
   formLabelProps?: FormLabelProps
   formGroupProps?: FormGroupProps
   formControlProps?: FormControlProps
-  formControlLabelProps?: FormControlLabelProps
+  formControlLabelProps?: { [key: string]: any }
   checkboxProps?: CheckboxProps
   controllerProps?: { [key: string]: any }
 }
