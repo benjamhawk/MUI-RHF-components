@@ -1,6 +1,6 @@
-# MUI-React-Hook-Form
+# MUI-RHF-components
 
-MUI-React-Hook-Form is a library that extracts common Material UI and React-Hook-Form integrations. This library provides building blocks to quickly start building forms without limiting any of the customizability that MUI offers. All of the props exposed by MUI are still accessible.
+MUI-RHF-components is a library that extracts common Material UI and React-Hook-Form integrations. This library provides building blocks to quickly start building forms without limiting any of the customizability that MUI offers. All of the props exposed by MUI are still accessible.
 
 ## Installation
 
@@ -86,7 +86,8 @@ Any other props that are given will be passed down to the form component
 | name               | string                                                                         | x        | [Unique Name for RHF](https://react-hook-form.com/api/usecontroller/controller)          |
 | label              | string                                                                         |          | input label                                                                              |
 | defaultValue       | string or number                                                               |          | [Default Value for Controller](https://react-hook-form.com/api/usecontroller/controller) |
-| useControllerProps | [useControllerProps](https://react-hook-form.com/api/usecontroller/controller) |          | allows acces to RHF useController Prop                                                   |
+| required           | boolean                                                                        |          | adds required validation to useController hook as well as the MUI input                  |
+| useControllerProps | [useControllerProps](https://react-hook-form.com/api/usecontroller/controller) |          | allows access to RHF useController Prop                                                  |
 
 Any other props that are given will be passed down to the input component
 
@@ -97,8 +98,9 @@ Any other props that are given will be passed down to the input component
 | name               | string                                                                         | x        | [Unique Name for RHF](https://react-hook-form.com/api/usecontroller/controller)          |
 | options            | { value: any; label: string }[]                                                | x        | select options                                                                           |
 | label              | string                                                                         |          | input label                                                                              |
+| required           | boolean                                                                        |          | adds required validation to useController hook as well as the MUI input                  |
 | defaultValue       | string or number                                                               |          | [Default Value for Controller](https://react-hook-form.com/api/usecontroller/controller) |
-| useControllerProps | [useControllerProps](https://react-hook-form.com/api/usecontroller/controller) |          | allows acces to RHF useController Prop                                                   |
+| useControllerProps | [useControllerProps](https://react-hook-form.com/api/usecontroller/controller) |          | allows access to RHF useController Prop                                                  |
 
 Any other props that are given will be passed down to the input component
 
@@ -109,7 +111,7 @@ Any other props that are given will be passed down to the input component
 | name                  | string                                                                                        | x        | [Unique Name for RHF](https://react-hook-form.com/api/usecontroller/controller) |
 | options               | { value: any; label: string }[]                                                               | x        | value/label for checkbox                                                        |
 | label                 | string                                                                                        |          | label for group                                                                 |
-| controllerProps       | [controllerProps](https://react-hook-form.com/api/usecontroller/controller)                   |          | allows acces to RHF useController Prop                                          |
+| controllerProps       | [controllerProps](https://react-hook-form.com/api/usecontroller/controller)                   |          | allows access to RHF useController Prop                                         |
 | formLabelProps        | [formLabelProps](https://material-ui.com/api/form-label/#formlabel-api)                       |          | allows access to MUI formLabel Prop                                             |
 | formGroupProps        | [formGroupProps](https://material-ui.com/api/form-group/#formgroup-api)                       |          | allows access to MUI formGroup Prop                                             |
 | formControlProps      | [formControlProps](https://material-ui.com/api/form-control/#formcontrol-api)                 |          | allows access to MUI formControl Prop                                           |
@@ -124,7 +126,7 @@ Any other props that are given will be passed down to the input component
 | options               | { value: any; label: string }[]                                                               | x        | value/label for checkbox                                                                 |
 | label                 | string                                                                                        |          | label for group                                                                          |
 | defaultValue          | string or number                                                                              |          | [Default Value for Controller](https://react-hook-form.com/api/usecontroller/controller) |
-| useControllerProps    | [useControllerProps](https://react-hook-form.com/api/usecontroller/controller)                |          | allows acces to RHF useController Prop                                                   |
+| useControllerProps    | [useControllerProps](https://react-hook-form.com/api/usecontroller/controller)                |          | allows access to RHF useController Prop                                                  |
 | formLabelProps        | [formLabelProps](https://material-ui.com/api/form-label/#formlabel-api)                       |          | allows access to MUI formLabel Prop                                                      |
 | radioGroupProps       | [radioGroupProps](https://material-ui.com/api/radio-group/)                                   |          | allows access to MUI radioGroup Prop                                                     |
 | formControlProps      | [formControlProps](https://material-ui.com/api/form-control/#formcontrol-api)                 |          | allows access to MUI formControl Prop                                                    |
